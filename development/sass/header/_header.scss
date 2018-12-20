@@ -1,0 +1,85 @@
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    .container {
+        padding: 0;
+    }
+    .bl-header {
+        border-bottom: 1px solid rgba( 255,255,255,0.10 );
+        .bl-header-content {
+            display: flex;
+            align-items: center;
+        }
+        .bl-header-logo {
+            display: block;
+            padding: 17px 0;
+            img {
+                height: auto;
+                max-height: 250px;
+                &.bl-light-logo {
+                    display: block;
+                }
+                &.bl-standard-logo {
+                    display: none;
+                }
+            }
+        }
+        .bl-header-nav {
+            margin-left: auto;
+            #menu-header {
+                display: inline-flex;
+                .menu-item {
+                    padding: 0 12px;
+                    a {
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        color: rgba(255, 255, 255, .85);
+                        padding: 17px 0;
+                        font-family: $fontMontserrat;
+                        font-weight: bold;                        
+                    }
+                    &.bl-nav-special {
+                        a {
+                            i {
+                                font-size: 18px;
+                                position: relative;
+                                bottom: -3px;
+                            }
+                        }
+                    }
+                    &.bl-nav-readmore {
+                        a {
+                            position: relative;
+                            i {
+                                font-size: 22px;
+                            }
+                            div {
+                                position: relative;
+                                .bl-read-later-total {
+                                    background: #505050;
+                                    color: #fff;
+                                    font-size: 12px;
+                                    border-radius: 20px;
+                                    width: 22px;
+                                    height: 22px;
+                                    text-align: center;
+                                    display: inline-block;
+                                    line-height: 18px;
+                                    padding: 0;
+                                    position: relative;
+                                    border: 2px solid #fff;
+                                    position: absolute;
+                                    top: 0;
+                                    right: -9px;
+                                }
+                            }
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -9,7 +9,7 @@ module.exports = function(grunt){
 			input				: 'development',
 			inputSCSS			: 'development/sass',
 			inputJS				: 'development/js',
-			inputHTMLELements	: 'development/html-elements',
+			inputHTMLELements	: 'development/htmlEml',
 			output				: 'production',
 			outputCSS			: 'production/css',
 			outputJS			: 'production/js',
@@ -62,8 +62,8 @@ module.exports = function(grunt){
 					'<%= dirs.inputSCSS %>/*/*.scss',			// development/sass/*/*.scss
 					'<%= dirs.inputJS %>/*.js',	
 					'<%= dirs.input %>/*.html',
-					'<%= dirs.inputHTMLELements %>/*.html',		// development/html-elements/*.html
-					//'<%= dirs.inputHTMLELements %>/*/*.html',	// development/html-elements/*/*.html
+					'<%= dirs.inputHTMLELements %>/*.html',		// development/htmlEml/*.html
+					//'<%= dirs.inputHTMLELements %>/*/*.html',	// development/htmlEml/*/*.html
 				],
 				tasks: ['sass', 'includes', 'uglify'  ],
 				options: {

@@ -10,7 +10,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Ban Ca Online</title>
+    <title>Travel Blog</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="robots" content="index,follow" />
@@ -20,8 +20,10 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
+    <!-- Font CSS -->
     <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="fonts/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="fonts/themify-icons/themify-icons.css" rel="stylesheet">
     <!-- style -->
     <link href="css/style.css" rel="stylesheet">
     
@@ -35,16 +37,21 @@
 </head>
 <body>
 
-    <section class="header">
-        include "html-elements/header-desktop.html"
-    </section>
-    <!-- Header -->
+    <article id="page-container">
+        <header class="header">
+            include "htmlEml/header.html"
+        </header>
+        <!-- Header -->
 
-    <section class="main"></section>
-    <!-- Main -->
+        <article class="wrapper">
+            include "htmlEml/parallax.html"
+            include "htmlEml/blog-home.html"
+            <!-- Main -->
+        </article>
 
-    <footer class="footer"></footer>
-    <!-- Main -->
+        <footer class="footer"></footer>
+        <!-- Footer -->
+    </article>
 
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
