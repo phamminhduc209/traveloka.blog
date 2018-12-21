@@ -13,6 +13,7 @@
 
 a {
   text-decoration: none;
+  word-wrap: break-word;
   transition: all 0.25s; }
   a:hover {
     text-decoration: none;
@@ -57,27 +58,45 @@ p {
 
 h1 {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  color: #2b2b2b;
+  font-weight: 700; }
 
 h2 {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  color: #2b2b2b;
+  font-weight: 700; }
 
 h3 {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  color: #2b2b2b;
+  font-weight: 700; }
 
 h4 {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  color: #2b2b2b;
+  font-weight: 700; }
 
 h5 {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  color: #2b2b2b;
+  font-weight: 700; }
 
 h6 {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  color: #2b2b2b;
+  font-weight: 700; }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -107,31 +126,118 @@ body {
   .container {
     width: 1200px; } }
 
-.bl-blog-home-ct .bl-blog-home-item .bl-blog-home-item-tt {
-  position: relative; }
-  .bl-blog-home-ct .bl-blog-home-item .bl-blog-home-item-tt span {
-    font-size: 24px;
-    font-family: "Montserrat", sans-serif;
-    position: relative;
-    color: #2b2b2b;
-    font-weight: 700;
-    background: #FFF;
-    display: block; }
-  .bl-blog-home-ct .bl-blog-home-item .bl-blog-home-item-tt:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    -moz-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    background-color: #eaeaea;
-    height: 1px;
-    left: 0;
-    right: 0; }
+.bl-blog-home-ct {
+  padding-top: 70px;
+  padding-bottom: 100px; }
+  .bl-blog-home-ct .bl-blog-home-item .bl-blog-home-item-tt {
+    margin-bottom: 20px;
+    position: relative; }
+    .bl-blog-home-ct .bl-blog-home-item .bl-blog-home-item-tt span {
+      font-size: 24px;
+      font-family: "Montserrat", sans-serif;
+      position: relative;
+      color: #2b2b2b;
+      font-weight: 700;
+      background: #FFF;
+      display: inline-block;
+      z-index: 2;
+      padding-right: 20px; }
+    .bl-blog-home-ct .bl-blog-home-item .bl-blog-home-item-tt:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+      background-color: #cecece;
+      height: 1px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      margin-top: 3px; }
 
-.bl-blog-categories-01 {
-  background-image: url(../images/nhung-quan-cafe-chat-o-sai-gon-featured-585x372.jpg); }
+.bl-blog-categories {
+  margin-bottom: 30px; }
+  .bl-blog-categories .bl-blog-categories-ct {
+    max-height: 580px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    position: relative; }
+    .bl-blog-categories .bl-blog-categories-ct .sh-ratio .sh-ratio-container {
+      padding-bottom: 76.5%; }
+    .bl-blog-categories .bl-blog-categories-ct .post-categories-container {
+      position: absolute;
+      left: 35px;
+      bottom: 35px;
+      right: 35px;
+      opacity: 1;
+      animation-name: fadein3;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+      animation-duration: 1s;
+      z-index: 120; }
+      .bl-blog-categories .bl-blog-categories-ct .post-categories-container .post-categories {
+        margin-bottom: 6px;
+        line-height: 1; }
+        .bl-blog-categories .bl-blog-categories-ct .post-categories-container .post-categories a {
+          font-family: "Montserrat", sans-serif;
+          text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+          font-size: 11px;
+          letter-spacing: 2px;
+          color: #1ba0e2;
+          font-weight: 700;
+          display: inline-block;
+          letter-spacing: 2px; }
+      .bl-blog-categories .bl-blog-categories-ct .post-categories-container a h2 {
+        font-size: 24px;
+        margin-top: 2px;
+        margin-bottom: 13px;
+        line-height: 120%;
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700; }
+      .bl-blog-categories .bl-blog-categories-ct .post-categories-container .post-meta a {
+        font-family: "Montserrat", sans-serif;
+        font-size: 11px;
+        color: #fff;
+        display: inline-block; }
+    .bl-blog-categories .bl-blog-categories-ct:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.75));
+      border-radius: 8px; }
+
+.bl-blog-categories-01 .bl-blog-categories-ct .sh-ratio .sh-ratio-container .sh-ratio-content {
+  max-height: 580px;
+  border-radius: 8px;
+  background-image: url(../images/nhung-diem-tham-quan-o-da-lat-featured-585x372.jpg); }
+
+.bl-blog-categories-02 .bl-blog-categories-ct .sh-ratio .sh-ratio-container .sh-ratio-content {
+  max-height: 580px;
+  border-radius: 8px;
+  background-image: url(../images/du-lich-trung-quoc-tu-tuc-featured-image-585x372.jpg); }
+
+.bl-blog-categories-03 .bl-blog-categories-ct .sh-ratio .sh-ratio-container .sh-ratio-content {
+  max-height: 580px;
+  border-radius: 8px;
+  background-image: url(../images/mon-an-vat-ngon-ha-noi-cover-585x372.png); }
+
+.sh-ratio {
+  position: relative; }
+  .sh-ratio .sh-ratio-container .sh-ratio-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: 50% 50%; }
 
 /* ======================== HEADER ======================== */
 .header {
