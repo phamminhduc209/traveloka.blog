@@ -1,8 +1,9 @@
 .header {
-    position: fixed;
+    position: relative;
     top: 0;
     right: 0;
     left: 0;
+    z-index: 1;
     .container {
         padding: 0;
     }
@@ -76,6 +77,11 @@
                                 }
                             }
                         }                        
+                    }
+                    &:hover {
+                        a {
+                            color: #FFF;
+                        }
                     }
                 }
             }

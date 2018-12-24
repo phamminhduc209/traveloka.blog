@@ -45,7 +45,6 @@
     margin-bottom: 30px;    
     .bl-blog-categories-ct {
         max-height: 580px;
-        margin-bottom: 40px;
         border-radius: 8px;
         position: relative;
         .sh-ratio {
@@ -78,8 +77,8 @@
                     letter-spacing: 2px;
                 }
             }
-            a {
-                h2 {
+            h2 {
+                a {
                     font-size: 24px;
                     margin-top: 2px;
                     margin-bottom: 13px;
@@ -111,6 +110,43 @@
         }
     }
 }
+.blog-mini-post {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    .blog-mini-post-content {
+        @include flexbox;
+        align-items: center;
+        width: 100%;
+        .post-img {
+            flex: 0 0 80px;
+            width: 80px;
+            margin-right: 20px;
+            img {
+                border-radius: 7px;
+            }
+        }
+        .post-info {
+            .post-title {
+                a {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                    display: block;
+                    word-break: break-word;
+                    font-family: "Montserrat";
+                    color: #2b2b2b;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    &:last-child {
+        border-bottom-width: 0;
+        padding-bottom: 0;
+    }
+}
+
 .bl-blog-categories-01 {   
     .bl-blog-categories-ct {
         .sh-ratio {
@@ -153,6 +189,28 @@
     }
 }
 
+.bl-updates {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background-image: url(../images/infographic-bgbddbb.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    overflow: hidden;
+    .bl-updates-tt {
+        font-size: 32px;
+        color: #ffffff;
+        line-height: 48px;
+        text-align: center;
+        font-family: $fontOpensans;
+        font-weight: 700;
+        font-style: normal;
+    }
+}
+
 .sh-ratio {
     position: relative;
     .sh-ratio-container {
@@ -166,4 +224,9 @@
             background-position: 50% 50%;
         }
     }
+}
+
+.post-meta, .post-meta a {
+    color: #8d8d8d;
+    font-size: 11px;
 }
