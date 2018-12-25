@@ -13,11 +13,16 @@ a {
 		text-decoration: none;
   		transition: all 0.25s;
 	}
+	&:focus {
+		outline: none;
+		text-decoration: none;
+		outline-offset: 0;
+	}
 }
 button {
 	transition: all 0.25s;
 	&:hover {
-  		transition: all 0.25s;
+		transition: all 0.25s;
 	}
 }
 img {
@@ -56,7 +61,6 @@ p {
 	#{$element} {
 		margin: 0px;
 		padding: 0px;
-		font-family: $fontMontserrat;
 		color: #2b2b2b;
 		font-weight: 700;
 	}

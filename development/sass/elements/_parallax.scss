@@ -5,24 +5,8 @@
     background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
-    box-sizing: border-box;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column nowrap;
-    flex-flow: column nowrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-transition: opacity .5s ease;
-    -o-transition: opacity .5s ease;
-    transition: opacity .5s ease;
+    background-attachment: fixed;
     overflow: hidden;
-    background-attachment: scroll;
-    background-color: transparent;
-    background-image: inherit;
-    background-size: cover;
     background-position: 50% 0;
     .bl-parallax-tt {
         margin-bottom: 40px;
